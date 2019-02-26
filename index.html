@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>みんみんみ</title>
+<meta name="viewport" content="width=360,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section id="startWindow">
+	<div>	
+		<h1>みんみんみ</h1>
+        <p>
+            旗揚げゲームの要領で、<br>
+            画面の指示に従ってセミをクリックしましょう！<br>
+            間違った選択をしてしまうと・・・。<br>
+            <br>
+            ステージは全部で<span class="maxStage">NULL</span>ステージ<br>
+            ステージが進むにつれ制限時間のテンポも早まります！
+        </p>
+		<button>START</button>
+	</div>
+</section>
+	
+	
+<div id="shield"><!--タイムアップ時の操作阻止--></div>
+	
+<section id="gameWindow">
+	<div id="status">
+		<div id="scoreArea">
+			<p id="maxScoreArea">max<span class="maxScore">00</span></p>
+			<p id="nowScoreArea">Score<span class="nowScore">00</span></p>
+		</div>
+		<p id="stageArea">Stage<span class="nowStage">01</span></p>
+	</div>
+	
+	<div id="countdownArea">
+		<span id="timeLimit">00</span>
+	</div>
+	
+    <p id="sizi">死んでいるセミを押せ！</p>
+    <ul id="card">
+        <li><img src="images/alive.png" id="semi1" alt="alive"></li>
+        <li><img src="images/deth.png" id="semi2" alt="deth"></li>
+        <li><img src="images/deth.png" id="semi3" alt="deth"></li>
+    </ul>
+	
+    
+</section>
+
+<section id="scoreWindow">
+	<div id="scoreWindowWrap">
+		<p id="hightScoreMsg">＼ハイスコア／</p>
+		<h2>Result</h2>
+
+		<div id="statusArea">
+			<dl>
+				<dt>Stage</dt>
+				<dd>
+					<span id="slash"><span class="nowStage">1</span>/</span><span class="maxStage">NULL</span>
+				</dd>
+				<dt>Your score</dt>
+				<dd class="nowScore">000000</dd>
+				<dt>High score</dt>
+				<dd class="maxScore">000000</dd>
+			</dl>
+		</div>
+		
+		<button>RETRY</button>
+	</div>
+	
+	
+</section>
+	
+<div id="notif">OK</div>
+	
+<audio id="playStageCall" preload="auto">
+	<source src="audio/stageCall.mp3" type="audio/mp3">
+</audio>
+<audio id="playCount" preload="auto">
+	<source src="audio/count.mp3" type="audio/mp3">
+</audio>
+<audio id="playTimeOver" preload="auto">
+	<source src="audio/timeOver.mp3" type="audio/mp3">
+</audio>
+<audio id="playSeikai" preload="auto">
+	<source src="audio/seikai.mp3" type="audio/mp3">
+</audio>
+<audio id="playHuseikai" preload="auto">
+	<source src="audio/huseikai.mp3" type="audio/mp3">
+</audio>
+<audio id="playHover" preload="auto">
+	<source src="audio/hover.mp3" type="audio/mp3">
+</audio>
+<audio id="playClick" preload="auto">
+	<source src="audio/click.mp3" type="audio/mp3">
+</audio>
+
+	
+
+
+<!--<script src="js/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
