@@ -31,6 +31,7 @@ body{
 	position: relative;
 	overflow: hidden;
 	background-color: #DEB02C;
+	user-select: none;
 }
 section{
 	position: absolute;
